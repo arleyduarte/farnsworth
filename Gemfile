@@ -1,0 +1,5 @@
+source "http://rubygems.org"
+gem "sinatra"
+#gem "warbler"
+gem "json"
+#gem "ruby-debug"
