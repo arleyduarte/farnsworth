@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sinatra API - State Access Token</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<style type="text/css" media="screen">
+	@font-face {
+		font-family: 'GentiumBasicRegular';
+		src: url('GenBasR.eot');
+		src: local('Gentium Basic'), local('GentiumBasic'), url('GenBasR.woff') format('woff'), url('GenBasR.ttf') format('truetype'), url('GenBasR.svg#GentiumBasic') format('svg');
+	}
+	body{
+		font-family: 'GentiumBasicRegular', Tahoma, Geneva, sans-serif;
+		color: #544c4a;
+		font-size: 100%;
+	}
+	footer, #content{
+		text-align: center;
+	}
+	footer h1{
+		font-size: 1em;
+		color:#B02B2C;
+	}
+	#content{
+		margin-top:5em;
+		margin-bottom:5em;
+	}
+	#content h1{
+		font-size: 3em;
+	}
+	a:link {color: #374140;text-decoration: underline;}
+	a:visited {color: #374140;}
+	a:active {text-decoration: none;}
+	a:hover {text-decoration: none;color: #374140;}
+</style>
+</head>
+
+<body>
+<div id="content">
+	<h1>The access token is:</h1>
+	<div id="<%= @tokenState %>">
+		<h2><a href="/token"><%= @tokenState  %></a><h2>
+	</div>
+</div>
+<footer><h1>This API is for development purposes only.</h1></footer>
+</body>
+
+</html>
